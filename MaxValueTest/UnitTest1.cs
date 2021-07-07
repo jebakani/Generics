@@ -43,5 +43,35 @@ namespace MaxValueTest
             int expected = third;
             expected.CompareTo(actual);
         }
+        [TestMethod]
+        public void TestMethodFloat1()
+        {
+            double first = 11.3;
+            double second = 5.6;
+            double third = 2.1;
+            double actual = maxOfThree.FindMax(first, second, third);
+            double expected = first;
+            expected.CompareTo(actual);
+        }
+        [TestMethod]
+        public void TestMethodFloat2()
+        {
+            double first = 8.0;
+            double second = 53.6;
+            double third = 2.1;
+            double actual = maxOfThree.FindMax(first, second, third);
+            double expected = first;
+            expected.CompareTo(actual);
+        }
+        [TestMethod]
+        public void TestMethodFloat3()
+        {
+            double first = 8.0;
+            double second = 5.6;
+            double third = 12.1;
+            double actual = maxOfThree.FindMax(first, second, third);
+            double expected = first;
+            expected.CompareTo(actual);
+        }
     }
 }

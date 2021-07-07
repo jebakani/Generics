@@ -23,7 +23,7 @@ namespace FindMaxOfThree
                 return thirdVal;
             }
         }
-        public static double FindMax(double firstVal, double secondVal, double thirdVal)
+        public double FindMax(double firstVal, double secondVal, double thirdVal)
         {
             if (firstVal.CompareTo(secondVal) > 0 && firstVal.CompareTo(thirdVal) > 0)
             {
@@ -38,7 +38,7 @@ namespace FindMaxOfThree
                 return thirdVal;
             }
         }
-        public static string FindMax(string firstVal, string secondVal, string thirdVal)
+        public string FindMax(string firstVal, string secondVal, string thirdVal)
         {
             if (firstVal.CompareTo(secondVal) > 0 && firstVal.CompareTo(thirdVal) > 0)
             {
