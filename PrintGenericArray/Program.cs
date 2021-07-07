@@ -6,7 +6,9 @@ namespace PrintGenericArray
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Printing array of different data type");
+            PrintArray.ReadInput();
+            Console.Read();
         }
     }
 }
