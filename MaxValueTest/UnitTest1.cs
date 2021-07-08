@@ -73,5 +73,37 @@ namespace MaxValueTest
             double expected = first;
             expected.CompareTo(actual);
         }
+
+        [TestMethod]
+        public void TestMethodString1()
+        {
+            string first = "Apple";
+            string second = "Peach";
+            string third = "Banana";
+            string actual = maxOfThree.FindMax(first, second, third);
+            string expected = first;
+            expected.CompareTo(actual);
+        }
+        [TestMethod]
+        public void TestMethodString2()
+        {
+            string first = "Peach";
+            string second = "Apple";
+            string third = "Banana";
+            string actual = maxOfThree.FindMax(first, second, third);
+            string expected = first;
+            expected.CompareTo(actual);
+        }
+        [TestMethod]
+        public void TestMethodString3()
+        {
+            string first = "Banana";
+            string second = "Peach";
+            string third = "Apple";
+            string actual = maxOfThree.FindMax(first, second, third);
+            string expected = first;
+            expected.CompareTo(actual);
+        }
+
     }
 }
