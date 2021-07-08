@@ -9,7 +9,16 @@ namespace FindMaxOfThree
     //generic class that extends IComparable interface
     public class MaxOfThree<T> where T: IComparable
     {
-        public  static T  FindMax(T firstVal, T secondVal,T thirdVal)
+        public T firstVal, secondVal, thirdVal;
+
+        public MaxOfThree(T first,T second,T third)
+        {
+            this.firstVal = first;
+            this.secondVal = second;
+            this.thirdVal = third;
+        }
+          
+        public static T  FindMax(T firstVal, T secondVal,T thirdVal)
         {
             if(firstVal.CompareTo(secondVal)>0 && firstVal.CompareTo(thirdVal)>0)
             {
@@ -24,5 +33,11 @@ namespace FindMaxOfThree
                 return thirdVal;
             }
         }       
+
+        public T MaxMethod()
+        {
+            T max = MaxOfThree<T>.FindMax(this.firstVal, this.secondVal, this.thirdVal);
+            return max;
+        }
     }
 }

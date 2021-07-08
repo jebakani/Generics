@@ -14,7 +14,7 @@ namespace MaxValueTest
             int first = 80;
             int second = 56;
             int third = 21;
-            int actual = MaxOfThree<int>.FindMax(first, second, third);
+            int actual = new MaxOfThree<int>(first, second, third).MaxMethod();
             int expected = first;
             Assert.AreEqual(expected, actual);
         }
@@ -24,7 +24,7 @@ namespace MaxValueTest
             int first = 70;
             int second = 90;
             int third = 21;
-            int actual = MaxOfThree<int>.FindMax(first, second, third);
+            int actual = new MaxOfThree<int>(first, second, third).MaxMethod();
             int expected = second;
             Assert.AreEqual(expected, actual);
         }
@@ -34,7 +34,7 @@ namespace MaxValueTest
             int first = 80;
             int second = 56;
             int third = 100;
-            int actual = MaxOfThree<int>.FindMax(first, second, third);
+            int actual = new MaxOfThree<int>(first, second, third).MaxMethod();
             int expected = third;
             Assert.AreEqual(expected, actual);
         }
@@ -44,7 +44,7 @@ namespace MaxValueTest
             double first = 11.3;
             double second = 5.6;
             double third = 2.1;
-            double actual = MaxOfThree<double>.FindMax(first, second, third);
+            double actual = new MaxOfThree<double>(first, second, third).MaxMethod();
             double expected = first;
             Assert.AreEqual(expected, actual);
         }
@@ -54,7 +54,7 @@ namespace MaxValueTest
             double first = 8.0;
             double second = 53.6;
             double third = 2.1;
-            double actual = MaxOfThree<double>.FindMax(first, second, third);
+            double actual = new MaxOfThree<double>(first, second, third).MaxMethod();
             double expected = second;
             Assert.AreEqual(expected, actual);
         }
@@ -64,7 +64,7 @@ namespace MaxValueTest
             double first = 8.0;
             double second = 5.6;
             double third = 12.1;
-            double actual = MaxOfThree<double>.FindMax(first, second, third);
+            double actual = new MaxOfThree<double>(first, second, third).MaxMethod();
             double expected = first;
             Assert.AreEqual(expected, actual);
         }
@@ -75,7 +75,7 @@ namespace MaxValueTest
             string first = "Apple";
             string second = "Peach";
             string third = "Banana";
-            string actual = MaxOfThree<string>.FindMax(first, second, third);
+            string actual = new MaxOfThree<string>(first, second, third).MaxMethod(); 
             string expected = first;
             Assert.AreEqual(expected, actual);
         }
@@ -85,7 +85,7 @@ namespace MaxValueTest
             string first = "Peach";
             string second = "Apple";
             string third = "Banana";
-            string actual = MaxOfThree<string>.FindMax(first, second, third);
+            string actual = new MaxOfThree<string>(first, second, third).MaxMethod();
             string expected = first;
             Assert.AreEqual(expected, actual);
         }
@@ -95,7 +95,7 @@ namespace MaxValueTest
             string first = "Banana";
             string second = "Peach";
             string third = "Apple";
-            string actual = MaxOfThree<string>.FindMax(first, second, third);
+            string actual = new MaxOfThree<string>(first, second, third).MaxMethod();
             string expected = second;
             Assert.AreEqual(expected, actual);
         }
